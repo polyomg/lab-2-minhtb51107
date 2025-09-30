@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
     <meta charset="UTF-8">
     <title>Param Form</title>
@@ -20,7 +19,7 @@
 </ul> -->
 
 <!-- Form nhập dữ liệu -->
-<h2>Form nhập sản phẩm</h2>
+   <h2>Form nhập sản phẩm</h2>
 <form action="/product/save" method="post" th:object="${product}">
     <input th:field="*{name}" placeholder="Tên sản phẩm"/><br>
     <input th:field="*{price}" placeholder="Giá sản phẩm"/><br>
@@ -40,5 +39,8 @@
         <li th:text="${item.price}">Giá</li>
     </th:block>
 </ul>
+
+
+</body>
 
 </html>
